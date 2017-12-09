@@ -1,0 +1,15 @@
+1.  stdint.h is a header file in the C standard library introduced in the C99 standard library section 7.18 to allow programmers to write more portable code by providing a set of typedefs that specify exact-width integer types, together with the defined minimum and maximum allowable values for each type, using macros.
+    (Reference: https://en.wikibooks.org/wiki/C_Programming/stdint.h)
+2.  uint8_t, uint32_t, int32_t, and uint16_t defines specific data types and assigns memory size and type
+3.  BYTE = 1byte, DWORD = 4bytes, LONG = 4bytes, WORD = 2bytes
+4.  the character "B" then the character "M" in ASCII encoding
+5.  bfSize = size of the whole bmp file, which includes the headerfiles
+    biSize is the size of the BITMAPINFOHEADER header file and equals 40 bytes
+6.  the bitmap is a top-down DIB with the origin at the upper left corner
+7.  biBitCount specifies the bits per pixel
+8.  fopen on line 24 may return NULL when argv[1] is not a valid file or could not be opened
+    fopen on line 32 may return NULL when argv[2] was not created successfully
+9.  the third argument specifies the number of elements you want to read. Since BITMAPFILEHEADER is a struct there's only one element.
+10. padding will be 3 as size of RGBTRIPE is 3
+11. fseek sets new file position indicator by offset from SEEK_CUR (where offset is set relative to current position indicator)
+12. SEEK_CUR means the offset is set relative to current position indicator
