@@ -188,3 +188,19 @@ If the output file cannot be opened for writing, your program should inform the 
 If the input file is not a 24-bit uncompressed BMP 4.0, your program should inform the user as much, as with ```fprintf``` (to ```stderr```), and ```main``` should return ```4```.
 
 Upon success, ```main``` should ```0```.
+
+## Usage
+Your program should behave per the examples below. Assumed that the underlined text is what some user has typed.
+
+```
+$ ./whodunit
+Usage: ./whodunit infile outfile
+$ echo $?
+1
+```
+
+```
+$ ./whodunit clue.bmp verdict.bmp
+$ echo $?
+0
+```
